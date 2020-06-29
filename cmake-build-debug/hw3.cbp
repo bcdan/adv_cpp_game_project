@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hw3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw3">
+				<Option output="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/hw3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw3/fast">
+				<Option output="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/hw3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Farm.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Farm.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/main.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
