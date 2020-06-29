@@ -6,17 +6,23 @@
 #define HW3_SIM_OBJECT_H
 
 
-#include "Geometry.h"
+#include <utility>
+#include <iostream>
+using namespace std;
 
 class Sim_object {
 private:
     string _name;
 public:
-    Sim_object();
-    ~Sim_object();
+    Sim_object(const string&name){
+        _name=name;
+    }
 
-    virtual void update();
-    virtual void broadcast_current_state();
+
+//    ~Sim_object();
+//
+    virtual void update() {}
+//    virtual void broadcast_current_state();
 
     const string &getName() const;
 };

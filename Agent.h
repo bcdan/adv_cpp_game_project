@@ -16,9 +16,9 @@ private:
     int _health;
     int _state;
 public:
-    void move_to(Point& p);
-    Point& get_location() const;
-    virtual void update();
+    Agent(const string& name, int health, int state, Point &location, int speed): _health(health), _state(state),Moving_object(location,speed),Sim_object(name){}
+//    void move_to(Point& p);
+//    virtual void update();
 };
 
 

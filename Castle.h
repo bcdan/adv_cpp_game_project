@@ -6,15 +6,20 @@
 #define HW3_CASTLE_H
 
 
-class Castle {
+#include "Structure.h"
+
+class Castle : public Structure{
 private:
     int _amount;
 public:
-    int getAmount() const;
+    Castle(int amount,Point& location,const string& name):_amount(amount),Structure(location,name){}
+    virtual int getAmount() const;
 
     void setAmount(int amount);
 
-//    virtual void update();
+    virtual void update(){
+        cout << "ani be castle" << endl;
+    };
 //    virutal void deposit();
 //    virtual void withdraw();
 };

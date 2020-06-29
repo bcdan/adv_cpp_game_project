@@ -4,3 +4,8 @@
 
 #include "Model.h"
 Model Model::_IModel;
+
+void Model::add_agent() {
+
+
+}

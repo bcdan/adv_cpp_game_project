@@ -4,18 +4,18 @@
 
 #ifndef HW3_MOVING_OBJECT_H
 #define HW3_MOVING_OBJECT_H
-
+#include "Geometry.h"
 
 class Moving_object {
 private:
-//    Point _location;
-//    Point _destination;
+    Point _location;
+    Point _destination;
     int _speed;
 public:
-    Moving_object();
-    ~Moving_object();
+    Moving_object(Point &location, int speed): _location(location),_speed(speed){}
+//    ~Moving_object();
 
-//    const Point &getLocation() const;
+    const Point &getLocation() const{return _location;}
 
 //    void setLocation(const Point &location);
 

@@ -6,9 +6,12 @@
 #define HW3_KNIGHT_H
 
 
-class Knight {
+#include "Agent.h"
+
+class Knight : public Agent{
 public:
 //    virtual void update() override;
+    Knight(const string& name, int health, int state, Point &location, int speed) : Agent(name,health,state,location,speed){}
 
 };
 

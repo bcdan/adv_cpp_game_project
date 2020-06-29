@@ -6,18 +6,24 @@
 #define HW3_FARM_H
 
 
-class Farm {
+#include "Structure.h"
+
+class Farm : public Structure {
 private:
     int _amount;
     int _rate;
 public:
-    int getAmount() const;
+
+    Farm(int amount, int rate, Point &location, const string &name) : _amount(amount), _rate(rate),
+                                                                      Structure(location, name) {}
+
+    virtual int getAmount() const;
 
     void setAmount(int amount);
 
-    int getRate() const;
+    int getRate() const { return _rate; }
 
-    void setRate(int rate);
+    void setRate(int rate) { _rate = rate; }
 
 //    virtual void update();
 //    virutal void deposit();

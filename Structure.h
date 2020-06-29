@@ -6,12 +6,18 @@
 #define HW3_STRUCTURE_H
 
 
-class Structure {
+#include "Sim_object.h"
+#include "Geometry.h"
+
+class Structure : public Sim_object{
 private:
-//    Point _location;
+    Point _location;
 public:
-//    Point& get_location() const;
-//    virtual void update();
+    Structure(Point& location,const string& name):_location(location),Sim_object(name){}
+
+    Point get_location() const{return _location;}
+    virtual void update(){ }
+    virtual int getAmount()const{return -1;} // virtual test
 //    virutal void deposit();
 //    virtual void withdraw();
 };

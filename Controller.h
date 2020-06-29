@@ -6,6 +6,8 @@
 
 #include "View.h"
 #include "Model.h"
+#include <sstream>
+#include <algorithm>
 
 /* Controller
 This class is responsible for controlling the Model and View according to interactions
@@ -16,10 +18,20 @@ class Controller {
 private:
     View* _view;
     Model* _model;
-    Controller() {}
+    Controller() {
+        commands = {"default", "size", "zoom", "pan", "show", "status", "go","create","course","position","destination","stop","attack","exit"};
+    }
     static Controller _IController;
+
 public:
+    vector<string> commands;
+    vector<string>types;
+
+
+
     Controller(const Controller&) = delete; //disable copy c-tor
+
+
 
     View *getView() const {
         return _view;
@@ -40,6 +52,10 @@ public:
     static Controller& Get(){
         return _IController;
     }
+
+    int get_cmd_number(const string& phrase) const; //check if given string is a valid command
+    bool agent_exist(const string& phrase); //check if given string is valid agent name
+    static void remove_symbols(string *line);
 
     // creates View object, runs the program by accepting user commands, then destroys View object
     void run();

@@ -12,12 +12,13 @@
 #include "Structure.h"
 #include "Agent.h"
 #include "View.h"
+#include "Castle.h"
 
 using namespace std;
 
 class Model {
 private:
-    Model() {}
+    Model() {time=0;}
     static Model _IModel;
 public:
     Model(const Model&) = delete; //disable copy c-tor
