@@ -18,12 +18,10 @@ public:
 
     void setAmount(int amount);
 
-    virtual void update(){
-        cout << "ani be castle" << endl;
-    };
+    void update() override {}
 
     string getType()const override{return _type;}
-//    virutal void deposit();
+  //  virtual void deposit();
 //    virtual void withdraw();
 };
 

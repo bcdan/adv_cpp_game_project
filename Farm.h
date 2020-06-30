@@ -28,9 +28,8 @@ public:
 
     void setRate(int rate) { _rate = rate; }
 
-//    virtual void update();
-//    virutal void deposit();
-//    virtual void withdraw();
+    virtual void update();
+    virtual void withdraw(int crates);
 };
 
 

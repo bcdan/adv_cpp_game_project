@@ -8,6 +8,8 @@
 
 #include <utility>
 #include <iostream>
+#include "Geometry.h"
+
 using namespace std;
 
 class Sim_object {
@@ -23,6 +25,7 @@ public:
 //
     virtual void update() {}
 //    virtual void broadcast_current_state();
+   virtual Point get_location() const{}
 
     const string &getName() const;
 };

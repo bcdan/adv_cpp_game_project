@@ -16,42 +16,10 @@ Sim_object.h
 Structure.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
 
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.cpp
-Controller.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.h
-Peasant.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
-Thug.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
-Knight.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.h
-
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.h
-View.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
-Model.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
-sstream
--
-algorithm
--
-typeinfo
--
-
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
 iostream
 -
 iomanip
--
-
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.h
-Agent.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
-Structure.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
-memory
--
-vector
 -
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
@@ -76,31 +44,27 @@ Castle.h
 Geometry.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
 
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.cpp
+Peasant.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
+
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
 Agent.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+Model.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
 utility
 -
 iostream
 -
+Geometry.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
 Sim_object.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
-Geometry.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
-
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.cpp
-Thug.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
-
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
-Agent.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
-Peasant.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 

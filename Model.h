@@ -33,7 +33,8 @@ public:
     vector<shared_ptr<Agent>> _agent_list;
     vector<shared_ptr<View>> _view_list;
 
-    string get_structure_by_point(Point p);
+    string get_objName_by_point(Point p); // find structure obj by point obj
+    Point get_point_by_name(const string& name); //get Point obj by object name
     void update();
     void add_agent();
     void attach();

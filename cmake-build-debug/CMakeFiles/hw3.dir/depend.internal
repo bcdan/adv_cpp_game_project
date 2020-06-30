@@ -57,12 +57,17 @@ CMakeFiles/hw3.dir/Moving_object.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
 CMakeFiles/hw3.dir/Peasant.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.cpp
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 CMakeFiles/hw3.dir/Sim_object.cpp.o
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.cpp
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
 CMakeFiles/hw3.dir/Structure.cpp.o
@@ -72,12 +77,16 @@ CMakeFiles/hw3.dir/Structure.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
 CMakeFiles/hw3.dir/Thug.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.cpp
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 CMakeFiles/hw3.dir/View.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.cpp
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h

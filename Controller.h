@@ -20,7 +20,7 @@ private:
     View* _view;
     Model* _model;
     Controller() {
-        commands = {"default", "size", "zoom", "pan", "show", "status", "go","create","course","position","destination","stop","attack","exit"};
+        commands = {"default", "size", "zoom", "pan", "show", "status", "go","create","course","position","destination","stop","attack","start_working","exit"};
     }
     static Controller _IController;
 
@@ -63,6 +63,7 @@ public:
     void printThugs()const;
     void printPeasants()const;
     void printStatus()const;
+    static shared_ptr<Agent> findAgent(const string& name);
     // creates View object, runs the program by accepting user commands, then destroys View object
     void run();
     void do_move();

@@ -56,12 +56,17 @@ CMakeFiles/hw3.dir/Moving_object.cpp.o: ../Moving_object.cpp
 CMakeFiles/hw3.dir/Moving_object.cpp.o: ../Moving_object.h
 
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Agent.h
+CMakeFiles/hw3.dir/Peasant.cpp.o: ../Castle.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Geometry.h
+CMakeFiles/hw3.dir/Peasant.cpp.o: ../Model.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Peasant.cpp
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Peasant.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Sim_object.h
+CMakeFiles/hw3.dir/Peasant.cpp.o: ../Structure.h
+CMakeFiles/hw3.dir/Peasant.cpp.o: ../View.h
 
+CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Sim_object.cpp
 CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Sim_object.h
 
@@ -71,12 +76,16 @@ CMakeFiles/hw3.dir/Structure.cpp.o: ../Structure.cpp
 CMakeFiles/hw3.dir/Structure.cpp.o: ../Structure.h
 
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Agent.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../Castle.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Geometry.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../Model.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Peasant.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Sim_object.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../Structure.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.cpp
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../View.h
 
 CMakeFiles/hw3.dir/View.cpp.o: ../View.cpp
 CMakeFiles/hw3.dir/View.cpp.o: ../View.h
