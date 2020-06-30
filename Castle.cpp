@@ -12,3 +12,8 @@ void Castle::setAmount(int amount) {
     Castle::_amount = amount;
 }
 
+void Castle::deposit(int crates) {
+    _amount+=crates;
+
+}
+

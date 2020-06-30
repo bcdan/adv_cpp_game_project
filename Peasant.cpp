@@ -31,7 +31,16 @@ void Peasant::update() {
                 position(getDestination());
                 return;
             }else{
+                string castleName = Model::Get().get_objName_by_point(getDestination());
+                for (auto &castle:Model::Get()._structure_list) {
+                    if (castleName == castle->getName()){
+                        castle->deposit(_inventory);
+                        _inventory=0;
+                        setHealth(getHealth()<MAX_HP? getHealth()+1:MAX_HP);
+                        setState(stopped);
 
+                    }
+                }
             }
 
         }

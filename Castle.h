@@ -21,7 +21,7 @@ public:
     void update() override {}
 
     string getType()const override{return _type;}
-  //  virtual void deposit();
+    virtual void deposit(int crates);
 //    virtual void withdraw();
 };
 
