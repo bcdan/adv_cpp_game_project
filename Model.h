@@ -33,6 +33,7 @@ public:
     vector<shared_ptr<Agent>> _agent_list;
     vector<shared_ptr<View>> _view_list;
 
+    string get_structure_by_point(Point p);
     void update();
     void add_agent();
     void attach();

@@ -11,3 +11,4 @@ int Castle::getAmount() const {
 void Castle::setAmount(int amount) {
     Castle::_amount = amount;
 }
+

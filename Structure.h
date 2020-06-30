@@ -12,9 +12,11 @@
 class Structure : public Sim_object{
 private:
     Point _location;
+
+
 public:
     Structure(Point& location,const string& name):_location(location),Sim_object(name){}
-
+    virtual string getType()const{return "Structure";}
     Point get_location() const{return _location;}
     virtual void update(){ }
     virtual int getAmount()const{return -1;} // virtual test

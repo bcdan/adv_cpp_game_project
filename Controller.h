@@ -8,6 +8,7 @@
 #include "Model.h"
 #include <sstream>
 #include <algorithm>
+#include <typeinfo>
 
 /* Controller
 This class is responsible for controlling the Model and View according to interactions
@@ -56,7 +57,12 @@ public:
     int get_cmd_number(const string& phrase) const; //check if given string is a valid command
     bool agent_exist(const string& phrase); //check if given string is valid agent name
     static void remove_symbols(string *line);
-
+    void printCastles()const;
+    void printFarms()const;
+    void printKnights()const;
+    void printThugs()const;
+    void printPeasants()const;
+    void printStatus()const;
     // creates View object, runs the program by accepting user commands, then destroys View object
     void run();
     void do_move();

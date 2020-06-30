@@ -15,17 +15,30 @@ public:
     Moving_object(Point &location, int speed): _location(location),_speed(speed){}
 //    ~Moving_object();
 
-    const Point &getLocation() const{return _location;}
+    const Point &getLocation() const {
+        return _location;
+    }
 
-//    void setLocation(const Point &location);
+    void setLocation(const Point &location) {
+        _location = location;
+    }
 
-//    const Point &getDestination() const;
+    const Point &getDestination() const {
+        return _destination;
+    }
 
-//    void setDestination(const Point &destination);
+    void setDestination(const Point &destination) {
+        _destination = destination;
+    }
 
-    int getSpeed() const;
+    int getSpeed() const {
+        return _speed;
+    }
 
-    void setSpeed(int speed);
+    void setSpeed(int speed) {
+        _speed = speed;
+    }
+
 
     void start_moving(); //virtual?
 };

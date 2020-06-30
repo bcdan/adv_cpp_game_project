@@ -5,6 +5,8 @@
 #include "Farm.h"
 #include <fstream>
 
+
+
 using namespace std;
 
 
@@ -53,15 +55,24 @@ int main(int argc, char *argv[]) {
     Controller::Get().run();
 //    for(auto &name : Model::Get()._structure_list)
 //        name->get_location().print();
-    cout << Model::Get()._agent_list[0]->getName() << endl;
-    Model::Get()._agent_list[0]->getLocation().print();
-    cout<<endl;
-    cout << Model::Get()._agent_list[1]->getName() << endl;
-    Model::Get()._agent_list[1]->getLocation().print();
-    cout<<endl;
-    cout << Model::Get()._agent_list[2]->getName() << endl;
-    Model::Get()._agent_list[2]->getLocation().print();
-    cout<<endl;
+//    cout << Model::Get()._agent_list[0]->getName() << endl;
+//    Model::Get()._agent_list[0]->getLocation().print();
+//    cout << Model::Get()._agent_list[0]->getState() <<endl;
+//    cout << Model::Get()._agent_list[0]->getHealth() <<endl;
+//    cout << Model::Get()._agent_list[0]->getSpeed() <<endl;
+//    cout<<endl;
+//    cout << Model::Get()._agent_list[1]->getName() << endl;
+//    Model::Get()._agent_list[1]->getLocation().print();
+//    cout << Model::Get()._agent_list[1]->getState() <<endl;
+//    cout << Model::Get()._agent_list[1]->getHealth() <<endl;
+//    cout << Model::Get()._agent_list[1]->getSpeed() <<endl;
+//    cout<<endl;
+//    cout << Model::Get()._agent_list[2]->getName() << endl;
+//    Model::Get()._agent_list[2]->getLocation().print();
+//    cout << Model::Get()._agent_list[2]->getState() <<endl;
+//    cout << Model::Get()._agent_list[2]->getHealth() <<endl;
+//    cout << Model::Get()._agent_list[2]->getSpeed() <<endl;
+//    cout<<endl;
     // cout << Model::Get()._agent_list[0]->getSpeed() << endl;
 
 //    Controller::Get().setView(&View::Get());

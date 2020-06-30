@@ -39,6 +39,7 @@ CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.cpp
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Sim_object.h
+CMakeFiles/hw3.dir/Knight.cpp.o: ../Structure.h
 
 CMakeFiles/hw3.dir/Model.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Model.cpp.o: ../Castle.h
@@ -72,6 +73,7 @@ CMakeFiles/hw3.dir/Structure.cpp.o: ../Structure.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Moving_object.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../Peasant.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.cpp
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.h

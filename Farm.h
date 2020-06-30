@@ -12,14 +12,17 @@ class Farm : public Structure {
 private:
     int _amount;
     int _rate;
+    string _type;
 public:
 
-    Farm(int amount, int rate, Point &location, const string &name) : _amount(amount), _rate(rate),
+    Farm(int amount, int rate, Point &location, const string &name) : _amount(amount), _rate(rate),_type("Farm"),
                                                                       Structure(location, name) {}
 
     virtual int getAmount() const;
 
     void setAmount(int amount);
+
+    virtual string getType()const{return _type;}
 
     int getRate() const { return _rate; }
 
