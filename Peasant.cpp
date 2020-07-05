@@ -3,7 +3,7 @@
 //
 
 #include "Peasant.h"
-
+#define KNIGHT_RANGE 2.5
 
 
 void Peasant::update() {
@@ -62,4 +62,13 @@ const Point &Peasant::getFarmSrc() const {
 void Peasant::load(int crates, shared_ptr<Structure> farm) {
     farm->withdraw(crates);
     _inventory += crates;
+}
+
+bool Peasant::nearby_knights() {
+    for (auto & agent : Model::Get()._agent_list)
+        if (agent->getType() == "Knight"){
+                if(getLocation().getDistance(agent->getLocation()) < KNIGHT_RANGE)
+                    return true;
+        }
+    return false;
 }

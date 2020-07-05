@@ -2,6 +2,7 @@
 #define HW3_GEOMETRY_H
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 // angle units conversion functions
 double to_radians(double theta_d);
@@ -17,6 +18,9 @@ typedef struct Point {
 	}
 	bool operator==(const Point& rhs) const{return _x==rhs._x && _y==rhs._y;
 	};
+	double getDistance(const Point& b) const{
+        return abs(sqrt(pow(this->_x-b._x,2)+pow(this->_y-b._y,2)));
+    }
 } Point;
 //struct Polar_vector;
 //typedef struct Cartesian_vector {

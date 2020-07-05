@@ -25,7 +25,7 @@ public:
 //
     virtual void update() {}
 //    virtual void broadcast_current_state();
-   virtual Point get_location() const{}
+   virtual Point& get_location() {}
 
     const string &getName() const;
 };

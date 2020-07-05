@@ -18,7 +18,7 @@ public:
 
     virtual string getType() const { return "Structure"; }
 
-    Point get_location() const { return _location; }
+    virtual  Point &get_location()  { return _location; }
 
     virtual void update() {}
 

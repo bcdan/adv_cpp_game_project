@@ -34,12 +34,15 @@ CMakeFiles/hw3.dir/Farm.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Farm.cpp.o: ../Structure.h
 
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Agent.h
+CMakeFiles/hw3.dir/Knight.cpp.o: ../Castle.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.cpp
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.h
+CMakeFiles/hw3.dir/Knight.cpp.o: ../Model.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Structure.h
+CMakeFiles/hw3.dir/Knight.cpp.o: ../View.h
 
 CMakeFiles/hw3.dir/Model.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Model.cpp.o: ../Castle.h

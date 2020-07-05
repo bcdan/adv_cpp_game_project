@@ -21,7 +21,7 @@ private:
     Model() {time=0;}
     static Model _IModel;
 public:
-    Model(const Model&) = delete; //disable copy c-tor
+    Model(const Model&) =delete; //disable copy c-tor
 
     static Model& Get(){
         return _IModel;

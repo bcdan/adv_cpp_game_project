@@ -35,12 +35,15 @@ CMakeFiles/hw3.dir/Farm.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
 CMakeFiles/hw3.dir/Knight.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.cpp
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Knight.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
+ /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 CMakeFiles/hw3.dir/Model.cpp.o
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
  /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h

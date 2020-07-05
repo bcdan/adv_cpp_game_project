@@ -24,8 +24,10 @@ void Agent::course(double angle) {
 void Agent::position(Point dest) {
     if (dest._x == getLocation()._x && dest._y == getLocation()._y)
         return;
-    double diffX = dest._x - get_location()._x, diffY = dest._y - get_location()._y, distX = abs(
-            dest._x - getLocation()._x), distY = abs(dest._y - getLocation()._y);
+    double diffX = dest._x - getLocation()._x;
+    double diffY = dest._y - getLocation()._y;
+    double distX = abs(dest._x - getLocation()._x);
+    double distY = abs(dest._y - getLocation()._y);
     if (diffX != 0) { // while both xs' are different
         if (diffX < 0) {// go left on X
             if (distX <= getSpeed()) {
@@ -53,7 +55,7 @@ void Agent::position(Point dest) {
             }
         } else {//go down on Y
             if (distY <= getSpeed()) {
-                setLocation(Point(getLocation()._x, getLocation()._y + distX));
+                setLocation(Point(getLocation()._x, getLocation()._y + distY));
             } else {
                 setLocation(Point(getLocation()._x, getLocation()._y + getSpeed()));
 
@@ -71,4 +73,8 @@ double Agent::getAngle() const {
 
 void Agent::setAngle(double angle) {
     _angle = angle;
+}
+
+Point &Agent::getLocation() {
+    return Moving_object::getLocation();
 }
