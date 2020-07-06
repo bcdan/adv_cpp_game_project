@@ -35,7 +35,7 @@ public:
     virtual void setTarget(const string &target) {} // only for THUG
     virtual bool nearby_knights() {} //returns true if a knight is in 2.5 k"m radius from thug
     virtual void resetInventory(){} // Only for PEASANT
-    virtual void reduceHP() {_health--;}
+    virtual void reduceHP() {--_health;}
     virtual Point &getLocation();
 
 

@@ -1,0 +1,18 @@
+create Bug Peasant (0.00, 0.00)
+create Loki Thug (1, 0)
+create Gog Thug (0, 1)
+create OferAlmighty Thug (1, 1)
+Loki position (1, 0) 30
+Gog position (0, 1) 30
+OferAlmighty position (1, 1) 30
+go
+Loki attack Bug
+Gog attack Bug
+go
+Loki attack Bug
+Gog attack Bug
+go
+Loki attack Bug
+go
+Gog attack Bug
+go

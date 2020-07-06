@@ -17,6 +17,7 @@ private:
     int _inventory;
     string _type;
     Point _farmSrc;
+    Point _castleDest;
     bool _reachedFarm;//false -> on the way to farm , true -> on the way to castle (working mode)
 public:
     int getInventory() const override { return _inventory; }

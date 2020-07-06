@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.cpp
-Agent.h
-/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
-
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
 Moving_object.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
@@ -17,6 +13,10 @@ Sim_object.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
 memory
 -
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h
+Structure.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
 iostream
@@ -26,9 +26,33 @@ iomanip
 cmath
 -
 
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
+vector
+-
+memory
+-
+iostream
+-
+Sim_object.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
+Structure.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
+Agent.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+View.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
+Castle.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Castle.h
+
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
 Geometry.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
+Agent.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+Model.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Model.h
 
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
 utility
@@ -37,4 +61,20 @@ iostream
 -
 Geometry.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Structure.h
+Sim_object.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.cpp
+Thug.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Thug.h
+Agent.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Agent.h
+Peasant.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 

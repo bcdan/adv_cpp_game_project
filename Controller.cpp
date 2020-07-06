@@ -36,6 +36,11 @@ void Controller::run() {
 
         ss >> phrase;
         if (agent_exist(phrase)) { //check if first phrase in command is a valid agent
+            shared_ptr<Agent> temp = findAgent(phrase);
+            if(temp->getState() == dead){//todo:exception
+                cout<<temp->getName()<<" is dead , can't perform actions"<<endl;
+                continue;
+            }
             agent = phrase;
             ss >> phrase;
             command = get_cmd_number(phrase);
@@ -253,15 +258,21 @@ void Controller::printThugs() const {
             agent->getLocation().print();
             if (agent->getState() == Moving_on_course)
                 cout << ", Heading on course " << agent->getAngle() << " deg," << " speed " << agent->getSpeed()
-                     << " km/h" << endl;
+                     << " km/h" ;
             else if (agent->getState() == Moving_to_destination) {
                 cout << ", Heading to position ";
                 agent->getDestination().print();
-                cout << ", speed " << agent->getSpeed() << " km/h" << endl;
+                cout << ", speed " << agent->getSpeed() << " km/h";
+               // cout << ", speed " << agent->getSpeed() << " km/h" <<" HP : "<<agent->getHealth()<<endl;
+
             } else if (agent->getState() == stopped)
-                cout << ", Stopped" << endl;
-            else if (agent->getState() == dead)
+                cout << ", Stopped";
+            else if (agent->getState() == dead){
                 cout << ", Dead - R.I.P" << endl;
+                continue;
+            }
+            cout<<", HP: "<<agent->getHealth()<<endl;
+
         }
     }
 }
@@ -271,12 +282,17 @@ void Controller::printPeasants() const {
         if (agent->getType() == "Peasant") {
             cout << "Peasant " << agent->getName() << " at position ";
             agent->getLocation().print();
-            if (agent->getState() == dead) cout << ", Dead" << endl;
-            else if (agent->getState() == stopped) cout << ", Stopped" << endl;
-            else {
-                cout << ", Heading to " << Model::Get().get_objName_by_point(agent->getDestination()) << ", speed"
-                     << agent->getSpeed() << "km/h" << endl;
+            if (agent->getState() == dead) {
+                cout << ", Dead" << endl;
+                continue;
             }
+            else if (agent->getState() == stopped) cout << ", Stopped";
+            else {
+                cout << ", Heading to " << Model::Get().get_objName_by_point(agent->getDestination()) << ", speed "
+                     << agent->getSpeed() << "km/h";
+            }
+            cout<<" ,Inventory: "<<agent->getInventory()<<", HP: "<<agent->getHealth()<<endl;
+
         }
     }
 }
