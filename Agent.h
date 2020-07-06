@@ -8,6 +8,7 @@
 
 #include "Moving_object.h"
 #include "Sim_object.h"
+#include "View.h"
 #include <memory>
 
 enum states {stopped, dead, Moving_to_destination, Moving_on_course,working,attacking};

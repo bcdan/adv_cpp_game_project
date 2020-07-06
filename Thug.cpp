@@ -71,6 +71,7 @@ void Thug::update() {
             peasant_target->reduceHP();
             if (peasant_target->getHealth() == 0) {
                 peasant_target->setState(dead);
+                View::Get().update_remove(getName());
             } else {
                 peasant_target->setState(stopped);
             }
@@ -78,8 +79,10 @@ void Thug::update() {
         } else {
             reduceHP();
             peasant_target->reduceHP();
-            if (getHealth() == 0)
+            if (getHealth() == 0){
                 setState(dead);
+                View::Get().update_remove(getName());
+            }
             else
                 setState(stopped);
         }
@@ -95,14 +98,20 @@ bool Thug::inRange(Point p) {
 void Thug::setToAttackPos(Point p) {
     double x = getLocation()._x, y = getLocation()._y;
     if (p._x - 1 || x == p._x || x == p._x + 1) {
-        if (y > p._y)
+        if (y > p._y) {
             setLocation(Point(x, y - p._y));
-        else
+            View::Get().update_location(getName(), getLocation());
+        } else {
             setLocation(Point(x, y + p._y));
+            View::Get().update_location(getName(), getLocation());
+        }
     } else if (y == p._y - 1 || y == p._y || y == p._y + 1) {
-        if (x > p._x)
+        if (x > p._x) {
             setLocation(Point(x - p._x, y));
-        else
+            View::Get().update_location(getName(), getLocation());
+        } else {
             setLocation(Point(x + p._x, y));
+            View::Get().update_location(getName(), getLocation());
+        }
     }
 }

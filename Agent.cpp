@@ -6,15 +6,16 @@ void Agent::course(double angle) {
     setAngle(angle);
     if (angle == 0) {
         setLocation(Point(getLocation()._x, getLocation()._y + getSpeed()));
+        View::Get().update_location(getName(),getLocation());
     } else if (angle == 90) {
         setLocation(Point(getLocation()._x + getSpeed(), getLocation()._y));
-
+        View::Get().update_location(getName(),getLocation());
     } else if (angle == 180) {
         setLocation(Point(getLocation()._x, getLocation()._y - getSpeed()));
-
+        View::Get().update_location(getName(),getLocation());
     } else if (angle == 270) {
         setLocation(Point(getLocation()._x - getSpeed(), getLocation()._y));
-
+        View::Get().update_location(getName(),getLocation());
     } else {
         cout << "invalid angle" << endl; // todo: exception
     }
@@ -32,39 +33,40 @@ void Agent::position(Point dest) {
         if (diffX < 0) {// go left on X
             if (distX <= getSpeed()) {
                 setLocation(Point(getLocation()._x - distX, getLocation()._y));
+                View::Get().update_location(getName(),getLocation());
             } else {
                 setLocation(Point(getLocation()._x - getSpeed(), getLocation()._y));
-
+                View::Get().update_location(getName(),getLocation());
             }
         } else {//go right on X
             if (distX <= getSpeed()) {
                 setLocation(Point(getLocation()._x + distX, getLocation()._y));
+                View::Get().update_location(getName(),getLocation());
             } else {
                 setLocation(Point(getLocation()._x + getSpeed(), getLocation()._y));
-
+                View::Get().update_location(getName(),getLocation());
             }
         }
-
     } else {//both xs' are aligned , move on Y axis
         if (diffY < 0) {// go down on Y
             if (distY <= getSpeed()) {
                 setLocation(Point(getLocation()._x, getLocation()._y - distY));
+                View::Get().update_location(getName(),getLocation());
             } else {
                 setLocation(Point(getLocation()._x, getLocation()._y - getSpeed()));
-
+                View::Get().update_location(getName(),getLocation());
             }
         } else {//go down on Y
             if (distY <= getSpeed()) {
                 setLocation(Point(getLocation()._x, getLocation()._y + distY));
+                View::Get().update_location(getName(),getLocation());
             } else {
                 setLocation(Point(getLocation()._x, getLocation()._y + getSpeed()));
-
+                View::Get().update_location(getName(),getLocation());
             }
         }
 
     }
-
-
 }
 
 double Agent::getAngle() const {

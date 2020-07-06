@@ -6,6 +6,7 @@ CMakeFiles/hw3.dir/Agent.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Sim_object.h
+CMakeFiles/hw3.dir/Agent.cpp.o: ../View.h
 
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Castle.cpp
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Castle.h
@@ -90,6 +91,7 @@ CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.cpp
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../View.h
 
+CMakeFiles/hw3.dir/View.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/View.cpp.o: ../View.cpp
 CMakeFiles/hw3.dir/View.cpp.o: ../View.h
 

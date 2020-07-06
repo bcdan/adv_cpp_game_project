@@ -3,6 +3,7 @@
 #include "Model.h"
 #include "Castle.h"
 #include "Farm.h"
+#include "View.h"
 #include <fstream>
 
 
@@ -26,6 +27,7 @@ void init(char *castles, char *farms) {
         ss >> name >> x >> y >> amount;
         Point tempPoint(x, y);
         shared_ptr<Structure> tempCastle = make_shared<Castle>(amount, tempPoint, name);
+        View::Get().update_location(name,tempPoint);
         Model::Get()._sim_object_list.emplace_back(tempCastle);
         Model::Get()._structure_list.emplace_back(tempCastle);
     }
@@ -38,6 +40,7 @@ void init(char *castles, char *farms) {
         ss >> name >> x >> y >> amount >> rate;
         Point tempPoint(x, y);
         shared_ptr<Structure> tempFarm = make_shared<Farm>(amount, rate, tempPoint, name);
+        View::Get().update_location(name,tempPoint);
         Model::Get()._sim_object_list.emplace_back(tempFarm);
         Model::Get()._structure_list.emplace_back(tempFarm);
     }

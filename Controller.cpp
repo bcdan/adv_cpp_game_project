@@ -67,6 +67,8 @@ void Controller::run() {
             case 3: //pan
                 break;
             case 4: //show
+
+                View::Get().draw();
                 break;
             case 5: //status
             {
@@ -92,6 +94,7 @@ void Controller::run() {
                         if (site->getName() == location) {
                             Point tempPoint = site->get_location();
                             shared_ptr<Agent> tempKnight = make_shared<Knight>(name, tempPoint);
+                            View::Get().update_location(name,tempPoint);
                             Model::Get()._sim_object_list.emplace_back(tempKnight);
                             Model::Get()._agent_list.emplace_back(tempKnight);
                             knightCreated = true; // found location -> returns true
@@ -107,10 +110,12 @@ void Controller::run() {
                     Point tempPoint(x, y);
                     if (type == "Peasant") {
                         shared_ptr<Agent> tempPeasant = make_shared<Peasant>(name, tempPoint);
+                        View::Get().update_location(name,tempPoint);
                         Model::Get()._sim_object_list.emplace_back(tempPeasant);
                         Model::Get()._agent_list.emplace_back(tempPeasant);
                     } else if (type == "Thug") {
                         shared_ptr<Agent> tempThug = make_shared<Thug>(name, tempPoint);
+                        View::Get().update_location(name,tempPoint);
                         Model::Get()._sim_object_list.emplace_back(tempThug);
                         Model::Get()._agent_list.emplace_back(tempThug);
                     } else {

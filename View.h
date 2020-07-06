@@ -6,6 +6,19 @@
 #define HW3_VIEW_H
 
 
+#include <string>
+#include <iostream>
+#include <map>
+#include "Geometry.h"
+using namespace std;
+#define MAX_SIZE 30
+#define MIN_SIZE 6
+#define DEFAULT_SIZE 25
+#define DEFAULT_SCALE 2.0
+#define MEASURE 10
+#define AXIS_SPACES 3
+#define MAX_SINGLE_DIGIT 9
+
 /* View object
 The View class encapsulates the data and functions needed to generate the map display, and control its properties. It has a "memory" for the names and locations of the to-be-plotted objects.
 
@@ -21,45 +34,48 @@ Usage:
 
 class View {
 private:
-    View() {}
+    View(int size=DEFAULT_SIZE, double scale = DEFAULT_SCALE) :_size(size),_scale(scale), _origin(Point(0,0)){}//default ctor: sets the default size, scale, and origin, outputs constructor message
+    int _size;
+    double _scale;
+    Point _origin;
+    map<string, Point> _db; //data base of 'view' - holds couples of string & point
     static View _IView;
 public:
-    View(const View&) = delete; //disable copy c-tor
+    View(const View &) = delete; //disable copy c-tor
 
-    static View& Get(){
+    static View &Get() {
         return _IView;
     }
 
-    // default ctor: sets the default size, scale, and origin, outputs constructor message
-    // dtor
+
+//     dtor
 //    ~View();
 
-    // Saves the supplied name and location for future use in a draw() call
-    // If the name is already present,the new location replaces the previous one.
-//    void update_location(const std::string& name, Point location);
+//     Saves the supplied name and location for future use in a draw() call
+//     If the name is already present,the new location replaces the previous one.
+    void update_location(const std::string &name, Point location);
 
-    // Removes the name and its location; no error if the name is not present.
-//    void update_remove(const std::string& name);
+//     Removes the name and its location; no error if the name is not present.
+    void update_remove(const std::string &name);
 
-    // prints out the current map
-//    void draw() const;
+//     prints out the current map
+    void draw() const;
 
-    // Modifies the display parameters:
-    // If the size is out of bounds will throw excpt
-//    void set_size(int size_);
+//    Modifies the display parameters:
+//    If the size is out of bounds will throw excpt
 
-    // If scale is not positive, will throw excpt
-//    void set_scale(double scale_);
+//     If scale is not positive, will throw excpt
+    void set_size(int size);
 
-    // Any values are legal for the origin
-//    void set_origin(Point origin_);
+    void set_zoom(double scale);
 
-    // Sets the parameters to the default values
-//    void set_defaults();
+//     Any values are legal for the origin
+    void set_origin(Point origin);
 
-    /*
-        YOUR EXTRA DECLARATIONS GO HERE
-    */
+//     Sets the parameters to the default values
+    void set_defaults();
+
+    string elementInRange(int i,int j);
 };
 
 #endif //HW3_VIEW_H

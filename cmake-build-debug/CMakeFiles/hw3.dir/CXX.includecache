@@ -11,6 +11,8 @@ Moving_object.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Moving_object.h
 Sim_object.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Sim_object.h
+View.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
 memory
 -
 
@@ -76,5 +78,17 @@ Agent.h
 Peasant.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Peasant.h
 
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.cpp
+View.h
 /home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
+
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/View.h
+string
+-
+iostream
+-
+map
+-
+Geometry.h
+/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Geometry.h
 
