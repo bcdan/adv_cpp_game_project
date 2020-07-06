@@ -7,8 +7,11 @@
 View View::_IView;
 
 void View::draw() const {
+   // int y_limit = _size * _scale - _scale;
+//    int y_limit = _size * _scale - _scale + _origin._y;
+//    int x_limit = _size * _scale - _scale + _origin._x;
     int limit = _size * _scale - _scale;
-    for (int i = limit, k = 0; i >= 0; i -= _scale, k++) {
+    for (int i = limit+_origin._y, k = 0; i >= _origin._y ; i -= _scale, k++) {
         if (k % AXIS_SPACES == 0) {
             if (i > MAX_SINGLE_DIGIT)
                 cout << i << " ";
@@ -17,12 +20,14 @@ void View::draw() const {
         } else
             cout << "   ";
 
-        for (int j = limit; j >= 0; j -= _scale) {
-            string str = Get().elementInRange(limit - j, i);
+        for (int j = _origin._x; j <= limit+_origin._x; j += _scale) {
+            string str = Get().elementInRange(j , i);
             if (str != "null")
                 cout << str[0] << str[1];
             else
                 cout << ". ";
+//                cout << j << " ";
+
         }
         cout << endl;
     }
@@ -65,7 +70,7 @@ string View::elementInRange(int i, int j) {
 
 void View::set_zoom(double scale) {
     if(_scale < 0){
-        //todo: throw
+        //todo: throw excpt
         return;
     }
     _scale = scale;
@@ -77,7 +82,7 @@ void View::set_origin(Point origin) {
 
 void View::set_size(int size) {
     if(size < MIN_SIZE || size > MAX_SIZE){
-        //todo: throw
+        //todo: throw excpt
         return;
     }
     _size = size;

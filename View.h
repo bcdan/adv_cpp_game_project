@@ -63,8 +63,8 @@ public:
 
 //    Modifies the display parameters:
 //    If the size is out of bounds will throw excpt
-
 //     If scale is not positive, will throw excpt
+
     void set_size(int size);
 
     void set_zoom(double scale);

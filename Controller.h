@@ -22,7 +22,7 @@ private:
     Controller() {
         commands = {"default", "size", "zoom", "pan", "show", "status", "go","create","course","position","destination","stop","attack","start_working","exit"};
         _model=&Model::Get();
-
+        _view=&View::Get();
     }
     static Controller _IController;
 
