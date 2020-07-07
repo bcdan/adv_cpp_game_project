@@ -10,6 +10,7 @@
 #include <iostream>
 #include <map>
 #include "Geometry.h"
+
 using namespace std;
 #define MAX_SIZE 30
 #define MIN_SIZE 6
@@ -18,6 +19,7 @@ using namespace std;
 #define MEASURE 10
 #define AXIS_SPACES 3
 #define MAX_SINGLE_DIGIT 9
+#define MAX_DOUBLE_DIGIT 99
 
 /* View object
 The View class encapsulates the data and functions needed to generate the map display, and control its properties. It has a "memory" for the names and locations of the to-be-plotted objects.

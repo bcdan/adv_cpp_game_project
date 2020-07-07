@@ -59,11 +59,26 @@ void Controller::run() {
         }
         switch (command) {
             case 0: //default
+            {
+                _view->set_defaults();
                 break;
+            }
             case 1: //size
+            {
+                int tempSize = 0;
+                ss>>tempSize;
+                _view->set_size(tempSize);
+                ss.clear();
                 break;
+            }
             case 2: //zoom
+            {
+                double tempZoom = 0;
+                ss>>tempZoom;
+                _view->set_zoom(tempZoom);
+                ss.clear();
                 break;
+            }
             case 3: { //pan
                 ss >> x >> y;
                 _view->set_origin(Point(x, y));
