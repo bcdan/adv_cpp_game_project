@@ -13,11 +13,14 @@
 #include "Agent.h"
 #include "View.h"
 #include "Castle.h"
+#include <sstream>
+
 
 using namespace std;
 
 class Model {
 private:
+    View* _view;
     Model() {time=0;}
     static Model _IModel;
 public:
@@ -34,12 +37,11 @@ public:
     vector<shared_ptr<View>> _view_list;
 
     string get_objName_by_point(Point p); // find structure obj by point obj
+    string get_structName_by_point(Point p);
     Point get_point_by_name(const string& name); //get Point obj by object name
-    void update();
     void add_agent();
-    void attach();
-    void detach();
-    void notify_location();
+    void attach(View* v) { _view = v;}
+    void detach() {_view = nullptr;}
 };
 
 

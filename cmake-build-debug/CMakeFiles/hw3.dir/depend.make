@@ -3,6 +3,7 @@
 
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Agent.cpp
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Agent.h
+CMakeFiles/hw3.dir/Agent.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Moving_object.h
 CMakeFiles/hw3.dir/Agent.cpp.o: ../Sim_object.h
@@ -10,6 +11,7 @@ CMakeFiles/hw3.dir/Agent.cpp.o: ../View.h
 
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Castle.cpp
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Castle.h
+CMakeFiles/hw3.dir/Castle.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Castle.cpp.o: ../Structure.h
@@ -18,6 +20,7 @@ CMakeFiles/hw3.dir/Controller.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Castle.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Controller.cpp
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Controller.h
+CMakeFiles/hw3.dir/Controller.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Knight.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Model.h
@@ -28,6 +31,7 @@ CMakeFiles/hw3.dir/Controller.cpp.o: ../Structure.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../Thug.h
 CMakeFiles/hw3.dir/Controller.cpp.o: ../View.h
 
+CMakeFiles/hw3.dir/Farm.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Farm.cpp.o: ../Farm.cpp
 CMakeFiles/hw3.dir/Farm.cpp.o: ../Farm.h
 CMakeFiles/hw3.dir/Farm.cpp.o: ../Geometry.h
@@ -36,6 +40,7 @@ CMakeFiles/hw3.dir/Farm.cpp.o: ../Structure.h
 
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Castle.h
+CMakeFiles/hw3.dir/Knight.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.cpp
 CMakeFiles/hw3.dir/Knight.cpp.o: ../Knight.h
@@ -47,6 +52,7 @@ CMakeFiles/hw3.dir/Knight.cpp.o: ../View.h
 
 CMakeFiles/hw3.dir/Model.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Model.cpp.o: ../Castle.h
+CMakeFiles/hw3.dir/Model.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Model.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Model.cpp.o: ../Model.cpp
 CMakeFiles/hw3.dir/Model.cpp.o: ../Model.h
@@ -61,6 +67,7 @@ CMakeFiles/hw3.dir/Moving_object.cpp.o: ../Moving_object.h
 
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Castle.h
+CMakeFiles/hw3.dir/Peasant.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Model.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Moving_object.h
@@ -70,10 +77,12 @@ CMakeFiles/hw3.dir/Peasant.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../Structure.h
 CMakeFiles/hw3.dir/Peasant.cpp.o: ../View.h
 
+CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Sim_object.cpp
 CMakeFiles/hw3.dir/Sim_object.cpp.o: ../Sim_object.h
 
+CMakeFiles/hw3.dir/Structure.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Structure.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Structure.cpp.o: ../Sim_object.h
 CMakeFiles/hw3.dir/Structure.cpp.o: ../Structure.cpp
@@ -81,6 +90,7 @@ CMakeFiles/hw3.dir/Structure.cpp.o: ../Structure.h
 
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Castle.h
+CMakeFiles/hw3.dir/Thug.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Model.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Moving_object.h
@@ -91,6 +101,7 @@ CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.cpp
 CMakeFiles/hw3.dir/Thug.cpp.o: ../Thug.h
 CMakeFiles/hw3.dir/Thug.cpp.o: ../View.h
 
+CMakeFiles/hw3.dir/View.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/View.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/View.cpp.o: ../View.cpp
 CMakeFiles/hw3.dir/View.cpp.o: ../View.h
@@ -98,6 +109,7 @@ CMakeFiles/hw3.dir/View.cpp.o: ../View.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Agent.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Castle.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Controller.h
+CMakeFiles/hw3.dir/main.cpp.o: ../Exceptions.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Farm.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Geometry.h
 CMakeFiles/hw3.dir/main.cpp.o: ../Model.h

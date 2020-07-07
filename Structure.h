@@ -14,19 +14,21 @@ private:
 
 
 public:
-    Structure(Point &location, const string &name) : _location(location), Sim_object(name) {}
+    Structure(Point &location, const string &name) :  Sim_object(name) {
+        _location=location;
+    }
 
     virtual string getType() const { return "Structure"; }
 
-    virtual  Point &get_location()  { return _location; }
+    virtual  Point get_location()  { return _location; }
 
-    virtual void update() {}
+    virtual void update() {} //for virtual purpose
 
-    virtual int getAmount() const { return -1; } // virtual test
+    virtual int getAmount() const { return -1; }
 
-    virtual void deposit(int crates) {}
+    virtual void deposit(int ) {} //for virtual purpose
 
-    virtual void withdraw(int crates) {}
+    virtual void withdraw(int ) {} //for virtual purpose
 };
 
 

@@ -102,6 +102,9 @@
 		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Controller.h">
 			<Option target="hw3"/>
 		</Unit>
+		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Exceptions.h">
+			<Option target="hw3"/>
+		</Unit>
 		<Unit filename="/home/dan/CLionProjects/Adv-cpp/adv_cpp_hw3/Farm.cpp">
 			<Option target="hw3"/>
 		</Unit>

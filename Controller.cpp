@@ -2,7 +2,6 @@
 // Created by dan on 29/06/2020.
 //
 
-
 #include "Controller.h"
 #include "Peasant.h"
 #include "Thug.h"
@@ -11,10 +10,11 @@
 Controller Controller::_IController;
 
 int Controller::get_cmd_number(const string &phrase) const {
-    for (int i = 0; i < commands.size(); i++) {
+    for (int i = 0; i < (int)commands.size(); i++) {
         if (commands[i] == phrase)
             return i;
     }
+    return -1;
 }
 
 bool Controller::agent_exist(const string &phrase) {
@@ -29,15 +29,16 @@ bool Controller::agent_exist(const string &phrase) {
 void Controller::run() {
     string input, phrase, agent, location;
     double x = 0, y = 0;
-    int command;
-    while (getline(cin, input)) {
+    int command=-1;
+    while (true) {
+        cout<<"Time "<<_model->time<<": "<<"Enter command: ";
+        getline(cin, input);
         remove_symbols(&input);
         stringstream ss(input);
-
         ss >> phrase;
         if (agent_exist(phrase)) { //check if first phrase in command is a valid agent
             shared_ptr<Agent> temp = findAgent(phrase);
-            if (temp->getState() == dead) {//todo:exception
+            if (temp->getState() == dead) {
                 cout << temp->getName() << " is dead , can't perform actions" << endl;
                 continue;
             }
@@ -45,15 +46,13 @@ void Controller::run() {
             ss >> phrase;
             command = get_cmd_number(phrase);
             if (command == -1) {
-                //throw exception
-                cout << "exception!" << endl;
+                cout << "Invalid command!" << endl;
                 continue;
             }
         } else { //else, check if first phrase in command is a valid command
             command = get_cmd_number(phrase);
             if (command == -1) {
-                //throw exception
-                cout << "exception!" << endl;
+                cout << "Invalid command!" << endl;
                 continue;
             }
         }
@@ -65,19 +64,33 @@ void Controller::run() {
             }
             case 1: //size
             {
-                int tempSize = 0;
-                ss>>tempSize;
-                _view->set_size(tempSize);
-                ss.clear();
-                break;
+                try {
+                    int tempSize = 0;
+                    ss >> tempSize;
+                    _view->set_size(tempSize);
+                    ss.clear();
+                    break;
+                }catch(Exceptions::runtime_error &err){
+                    cout<<err.what()<<endl;
+                    ss.clear();
+                    break;
+                }
             }
             case 2: //zoom
             {
-                double tempZoom = 0;
-                ss>>tempZoom;
-                _view->set_zoom(tempZoom);
-                ss.clear();
-                break;
+                try{
+                    double tempZoom = 0;
+                    ss >> tempZoom;
+
+                    _view->set_zoom(tempZoom);
+                    ss.clear();
+                    break;
+                }catch(Exceptions::runtime_error &err){
+                    cout<<err.what()<<endl;
+                    ss.clear();
+                    break;
+                }
+
             }
             case 3: { //pan
                 ss >> x >> y;
@@ -86,13 +99,12 @@ void Controller::run() {
                 break;
             }
             case 4: //show
-
+                cout<<"Display size: "<<_view->get_size()<<", scale: "<<_view->getScale()<<" origin: ("<<setprecision(2)<<_view->getOrigin()._x<<", "<<_view->getOrigin()._y<<")"<<endl;
                 View::Get().draw();
                 break;
             case 5: //status
             {
                 printStatus();
-                //todo: add thug and knight print functions
                 break;
             }
 
@@ -107,132 +119,202 @@ void Controller::run() {
                 string name, type;
                 bool knightCreated = false;
                 ss >> name >> type;
-                if (type == "Knight") {
-                    ss >> location; // knight has difference arguments -> gets string of site location instead point
-                    for (auto &site :Model::Get()._structure_list) {//check if location is true and get it
-                        if (site->getName() == location) {
-                            Point tempPoint = site->get_location();
-                            shared_ptr<Agent> tempKnight = make_shared<Knight>(name, tempPoint);
+                try {
+                    if(_model->get_point_by_name(name)._x != INVALID_POINT)
+                        throw Exceptions::InputException("Agent already exists");
+                    if (type == "Knight") {
+                        ss >> location; // knight has difference arguments -> gets string of site location instead point
+                        for (auto &site :Model::Get()._structure_list) {//check if location is true and get it
+                            if (site->getName() == location) {
+                                Point tempPoint = site->get_location();
+                                shared_ptr<Agent> tempKnight = make_shared<Knight>(name, tempPoint);
+                                View::Get().update_location(name, tempPoint);
+                                Model::Get()._sim_object_list.emplace_back(tempKnight);
+                                Model::Get()._agent_list.emplace_back(tempKnight);
+                                knightCreated = true; // found location -> returns true
+                                break;
+                            }
+                        }
+                        if (!knightCreated)
+                            throw Exceptions::InputException("Couldn't create knight - not a valid location" );
+
+                    } else {
+                        ss >> x >> y;
+                        Point tempPoint(x, y);
+                        if (type == "Peasant") {
+                            shared_ptr<Agent> tempPeasant = make_shared<Peasant>(name, tempPoint);
                             View::Get().update_location(name, tempPoint);
-                            Model::Get()._sim_object_list.emplace_back(tempKnight);
-                            Model::Get()._agent_list.emplace_back(tempKnight);
-                            knightCreated = true; // found location -> returns true
-                            break;
+                            Model::Get()._sim_object_list.emplace_back(tempPeasant);
+                            Model::Get()._agent_list.emplace_back(tempPeasant);
+                        } else if (type == "Thug") {
+                            shared_ptr<Agent> tempThug = make_shared<Thug>(name, tempPoint);
+                            View::Get().update_location(name, tempPoint);
+                            Model::Get()._sim_object_list.emplace_back(tempThug);
+                            Model::Get()._agent_list.emplace_back(tempThug);
+                        } else {
+                            throw Exceptions::Wrong_Type_Exception("Invalid type of an agent" );
                         }
                     }
-                    if (!knightCreated)
-                        cout << "Couldn't create knight - not a valid location" << endl; //todo:Add exception
                     ss.clear();
                     break;
-                } else {
-                    ss >> x >> y;
-                    Point tempPoint(x, y);
-                    if (type == "Peasant") {
-                        shared_ptr<Agent> tempPeasant = make_shared<Peasant>(name, tempPoint);
-                        View::Get().update_location(name, tempPoint);
-                        Model::Get()._sim_object_list.emplace_back(tempPeasant);
-                        Model::Get()._agent_list.emplace_back(tempPeasant);
-                    } else if (type == "Thug") {
-                        shared_ptr<Agent> tempThug = make_shared<Thug>(name, tempPoint);
-                        View::Get().update_location(name, tempPoint);
-                        Model::Get()._sim_object_list.emplace_back(tempThug);
-                        Model::Get()._agent_list.emplace_back(tempThug);
-                    } else {
-                        cerr << "Exception on types of agents" << endl;
-                        //throw exception
-                    }
+                }catch(Exceptions::runtime_error & error){
+                    cout<<error.what()<<endl;
+                    ss.clear();
+                    break;
                 }
-                ss.clear();
-                break;
             }
             case 8://course
             {
-                shared_ptr<Agent> temp = findAgent(agent); //find agent
-                double angle;
-                ss >> angle; //get angle from command
-                temp->setAngle(angle);
-                if (temp->getType() == "Thug") {
-                    int speed = 0;
-                    ss >> speed;
-                    temp->setSpeed(speed);
+                try {
+                    shared_ptr<Agent> temp = findAgent(agent); //find agent
+                    if (temp == nullptr) {
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    }
+                    double angle=0;
+                    ss >> angle; //get angle from command
+                    temp->setAngle(angle);
+                    if (temp->getType() == "Thug") {
+                        int speed = 0;
+                        ss >> speed;
+                        temp->setSpeed(speed);
+                    }
+                    temp->setState(Moving_on_course);
+                    ss.clear();
+                    break;
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
                 }
-                temp->setState(Moving_on_course);
-                ss.clear();
-                break;
             }
             case 9: //position
             {
-                shared_ptr<Agent> temp = findAgent(agent);  //find agent
-                ss >> x >> y;   //get Point coordinate from command
-                if (temp->getType() == "Thug") {
-                    int speed = 0;
-                    ss >> speed;
-                    temp->setSpeed(speed);
-                }
-                temp->setDestination(Point(x, y));   //set new destination for agent
-                temp->setState(Moving_to_destination);  //set new state for agent
-                ss.clear();
-                break;
-            }
-            case 10: { //destination todo:TEST THIS
-                shared_ptr<Agent> temp = findAgent(agent); //find agent
-                if (temp->getType() != "Knight") { //The only agent that's allowed to use this command is 'Knight'
-                    //todo:throw exception -> cmd only for Knight type agent
-                } else {
-                    string dest;
-                    ss >> dest; //get destination name from command
-                    temp->destination(dest);
+                try {
+                    shared_ptr<Agent> temp = findAgent(agent);  //find agent
+                    if (temp == nullptr) {
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    }
+                    ss >> x >> y;   //get Point coordinate from command
+                    if (temp->getType() == "Thug") {
+                        int speed = 0;
+                        ss >> speed;
+                        temp->setSpeed(speed);
+                    }
+                    temp->setDestination(Point(x, y));   //set new destination for agent
+                    temp->setState(Moving_to_destination);  //set new state for agent
                     ss.clear();
+                    break;
+
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
                 }
-                break;
+            }
+            case 10: { //destination
+                try {
+                    shared_ptr<Agent> temp = findAgent(agent); //find agent
+                    if (temp == nullptr) {
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    }
+                    if (temp->getType() != "Knight") { //The only agent that's allowed to use this command is 'Knight'
+                        throw Exceptions::Wrong_Type_Exception(temp->getName() + " is not a Knight - can't perform the requested command");
+                    } else {
+                        string dest;
+                        ss >> dest; //get destination name from command
+                        temp->destination(dest);
+                        ss.clear();
+                        break;
+                    }
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
+                }
             }
             case 11: { //stop
-                shared_ptr<Agent> temp_agent = findAgent(agent);
-                temp_agent->setState(stopped);
-                break;
+                try {
+                    shared_ptr<Agent> temp_agent = findAgent(agent);
+                    if (temp_agent == nullptr) {
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    }
+                    temp_agent->setState(stopped);
+                    break;
+
+
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
+                }
             }
             case 12: //attack
             {
-                shared_ptr<Agent> temp = findAgent(agent); //find thug
-                if (temp->getType() != "Thug") { //Only "thug" agent is allowed to use this
-                    //todo:throw exception -> cmd only for Thug type agent
-                } else {
-                    string target;
-                    ss >> target;
-                    temp->setTarget(target);
-                    //todo:check if target exists AND is a peasant
-                    temp->setState(attacking);
+                try {
+                    shared_ptr<Agent> temp = findAgent(agent); //find thug
+                    if (temp == nullptr)
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    if (temp->getType() != "Thug") { //Only "thug" agent is allowed to use this
+                        throw Exceptions::Wrong_Type_Exception(
+                                temp->getName() + " is not a Thug - can't perform the requested command");
+                    } else {
+                        string target;
+                        ss >> target;
+                        temp->setTarget(target);
+                        if (findAgent(target) == nullptr)
+                            throw Exceptions::Agent_Not_Found_Exception(target + " was not found");
+                        if (findAgent(target)->getType() != "Peasant")
+                            throw Exceptions::Wrong_Type_Exception(
+                                    target + " is not a Peasant - can't attack non-peasants");
+                        temp->setState(attacking);
+                        ss.clear();
+                        break;
+                    }
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
                 }
-                ss.clear();
                 break;
-
             }
             case 13: //start_working
             {
-                shared_ptr<Agent> temp = findAgent(agent); //find agent
-                if (temp->getType() != "Peasant") { //The only agent that's allowed to use this command is 'Peasant'
-                    //todo:throw exception -> cmd only for Peasant type agent
-                } else {
-                    string farm, castle;
-                    ss >> farm >> castle;
-                    temp->start_working(farm, castle);
-                    ss.clear();
-                }
+                try {
+                    shared_ptr<Agent> temp = findAgent(agent); //find agent
+                    if (temp == nullptr) {
+                        throw Exceptions::Agent_Not_Found_Exception(agent + " was not found");
+                    }
+                    if (temp->getType() != "Peasant") { //The only agent that's allowed to use this command is 'Peasant'
+                        throw Exceptions::Wrong_Type_Exception(temp->getName() + " is not a Peasant - can't attack non-peasants");
+                    } else {
+                        string farm, castle;
+                        ss >> farm >> castle;
+                        temp->start_working(farm, castle);
+                        ss.clear();
+                        break;
 
-                break;
+                    }
+                } catch (Exceptions::runtime_error &error) {
+                    cout << error.what() << endl;
+                    ss.clear();
+                    break;
+                }
             }
             case 14://exit
                 return;
 
         }
+        ss.clear();
     }
 
 }
 
 void Controller::remove_symbols(string *line) {
-    line->erase(remove(line->begin(), line->end(), ')'), line->end()); //remove A from string
-    line->erase(remove(line->begin(), line->end(), '('), line->end()); //remove A from string
-    line->erase(remove(line->begin(), line->end(), ','), line->end()); //remove A from string
+    for(auto& c:*line){
+        if(c=='('||c==')'||c==',')
+            c=' ';
+    }
+
 }
 
 void Controller::printCastles() const {
@@ -287,7 +369,6 @@ void Controller::printThugs() const {
                 cout << ", Heading to position ";
                 agent->getDestination().print();
                 cout << ", speed " << agent->getSpeed() << " km/h";
-                // cout << ", speed " << agent->getSpeed() << " km/h" <<" HP : "<<agent->getHealth()<<endl;
 
             } else if (agent->getState() == stopped)
                 cout << ", Stopped";
@@ -310,16 +391,22 @@ void Controller::printPeasants() const {
                 cout << ", Dead" << endl;
                 continue;
             } else if (agent->getState() == stopped) cout << ", Stopped";
-            else {
+            else if (agent->getState() == working){
                 cout << ", Heading to " << Model::Get().get_objName_by_point(agent->getDestination()) << ", speed "
                      << agent->getSpeed() << "km/h";
+            }else if (agent->getState() == Moving_on_course){
+                cout << ", Heading on course " << agent->getAngle()  << " deg, speed "
+                     << agent->getSpeed() << "km/h";
+            }else if( agent->getState() == Moving_to_destination ){
+                cout << ", Heading to " << Model::Get().get_structName_by_point(agent->getDestination()) << ", speed "
+                     << agent->getSpeed() << "km/h";
+
             }
             cout << " ,Inventory: " << agent->getInventory() << ", HP: " << agent->getHealth() << endl;
 
         }
     }
 }
-
 
 void Controller::printStatus() const {
     printCastles();

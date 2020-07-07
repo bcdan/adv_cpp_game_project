@@ -9,6 +9,7 @@
 #include <sstream>
 #include <algorithm>
 #include <typeinfo>
+#include "Exceptions.h"
 
 /* Controller
 This class is responsible for controlling the Model and View according to interactions
@@ -58,7 +59,7 @@ public:
 
     int get_cmd_number(const string& phrase) const; //check if given string is a valid command
     bool agent_exist(const string& phrase); //check if given string is valid agent name
-    static void remove_symbols(string *line);
+    static void remove_symbols(string *line); // removes ", ( " etc
     void printCastles()const;
     void printFarms()const;
     void printKnights()const;
@@ -68,9 +69,7 @@ public:
     static shared_ptr<Agent> findAgent(const string& name);
     // creates View object, runs the program by accepting user commands, then destroys View object
     void run();
-    void do_move();
-    void do_go();
-    void do_show();
+
 
 };
 

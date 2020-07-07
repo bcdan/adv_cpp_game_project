@@ -55,9 +55,12 @@ void Peasant::update() {
 }
 
 void Peasant::start_working(const string &farm, const string &castle) {
-    setState(working);
     Point farmP = Model::Get().get_point_by_name(farm), castleP = Model::Get().get_point_by_name(castle);
-    //todo: check if valid names/objects
+    if((farmP._x ==INVALID_POINT) && (farmP._y==INVALID_POINT) )
+        throw Exceptions::InputException("No such farm");
+    if((castleP._x ==INVALID_POINT) && (castleP._y==INVALID_POINT) )
+        throw Exceptions::InputException("No such castle");
+    setState(working);
     _farmSrc = farmP;
     _castleDest = castleP;
     setDestination(farmP);

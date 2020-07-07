@@ -14,22 +14,19 @@
 
 class Thug : public Agent {
 private:
-    string _type;
-    bool _course;
-    bool _position;
-    string _target;
+    string _type; // type = thug
+    string _target; // attack target name
 public:
-    Thug(const string &name, Point &startingLocation, int state = stopped, int health = 5, int speed = 0) : _type(
-            "Thug"), Agent(name, health, state, startingLocation, speed) {}
+    Thug(const string &name, Point &startingLocation, int state = stopped, int health = 5, int speed = 0) :  Agent(name, health, state, startingLocation, speed) {
+        _type="Thug";
+    }
 
     virtual void course(double angle, int speed); //set moving course at specified speed
     virtual void position(Point dest, int speed); //set destination as point (x,y) at specified speed
     virtual void update() override;
-
-//    Peasant &find_pray();//return peasant if a peasant is present in 1 k"m radius from thug, return null otherwise
     virtual bool attack(const shared_ptr<Agent>& peasant);
-    bool inRange(Point p);
-    void setToAttackPos(Point p);
+    bool inRange(Point p); // check if target is in range (if peasant's in range)
+    void setToAttackPos(Point p); // position thug in peasant's radius
 
     const string &getTarget() const {
         return _target;
@@ -41,8 +38,6 @@ public:
 
     virtual string getType() const {return _type;}
 
-
-    //preform attack on peasant
 };
 
 

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#define INVALID_POINT 999999
 using namespace std;
 // angle units conversion functions
 double to_radians(double theta_d);
@@ -22,20 +23,6 @@ typedef struct Point {
         return abs(sqrt(pow(this->_x-b._x,2)+pow(this->_y-b._y,2)));
     }
 } Point;
-//struct Polar_vector;
-//typedef struct Cartesian_vector {
-//	Cartesian_vector(const struct Polar_vector & pv);
-//	Cartesian_vector();
-//	void operator=(const struct Polar_vector & pv);
-//	double _delta_x;
-//	double _delta_y;
-//} Cartesian_vector;
-//typedef struct Polar_vector {
-//	Polar_vector(const Cartesian_vector & cv);
-//	Polar_vector();
-//	void operator=(const Cartesian_vector & cv);
-//	double _r;
-//	double _theta;
-//} Polar_vector;
+
 
 #endif //HW3_GEOMETRY_H

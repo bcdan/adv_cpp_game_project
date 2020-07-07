@@ -26,15 +26,18 @@ public:
 
     string getType() const override { return _type; }
 
-    Peasant(const string &name, Point &startingLocation, int state = stopped, int health = 10, int speed = 5)
-            : _inventory(0), _type("Peasant"), _reachedFarm(false),
-              Agent(name, health, state, startingLocation, speed) {}
+    Peasant(const string &name, Point &startingLocation, int state = stopped, int health = 10, int speed = 5) : Agent(name, health, state, startingLocation,
+                                                                                                                      speed) {
+        _inventory = 0;
+        _type = "Peasant";
+        _reachedFarm = false;
+    }
 
     virtual void update() override;
 
     virtual void start_working(const string &farm, const string &castle);
 
-    void load(int crates, shared_ptr<Structure> farm);
+    void load(int crates, shared_ptr<Structure> farm); //load crates to inventory
 
     const Point &getFarmSrc() const;
 

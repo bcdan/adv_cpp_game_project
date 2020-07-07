@@ -10,6 +10,7 @@
 #include <iostream>
 #include <map>
 #include "Geometry.h"
+#include "Exceptions.h"
 
 using namespace std;
 #define MAX_SIZE 30
@@ -63,11 +64,17 @@ public:
 //     prints out the current map
     void draw() const;
 
+    double getScale() const;
+
+    const Point &getOrigin() const;
 //    Modifies the display parameters:
 //    If the size is out of bounds will throw excpt
 //     If scale is not positive, will throw excpt
 
     void set_size(int size);
+
+    int get_size()const;
+
 
     void set_zoom(double scale);
 

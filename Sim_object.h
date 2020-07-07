@@ -9,6 +9,7 @@
 #include <utility>
 #include <iostream>
 #include "Geometry.h"
+#include "Exceptions.h"
 
 using namespace std;
 
@@ -20,12 +21,8 @@ public:
         _name=name;
     }
 
-
-//    ~Sim_object();
-//
     virtual void update() {}
-//    virtual void broadcast_current_state();
-   virtual Point& get_location() {}
+   virtual Point get_location() { return {0,0}; }
 
     const string &getName() const;
 };

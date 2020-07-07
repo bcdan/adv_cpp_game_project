@@ -11,7 +11,7 @@
 #include "View.h"
 #include <memory>
 
-enum states {stopped, dead, Moving_to_destination, Moving_on_course,working,attacking};
+enum states {stopped, dead, Moving_to_destination, Moving_on_course,working,attacking}; //current state of an agent
 
 class Agent :  public Sim_object,public Moving_object{
 private:
@@ -23,18 +23,22 @@ public:
     void setAngle(double angle);
 
 public:
-    Agent(const string& name, int health, int state, Point &location, int speed): _health(health), _state(state),_angle(0),Moving_object(location,speed),Sim_object(name){}
-//    void move_to(Point& p);
+    Agent(const string& name, int health, int state, Point &location, int speed): Sim_object(name),Moving_object(location,speed){
+        _angle=0;
+        _state=state;
+        _health=health;
+
+    }
     virtual void update() {}
-    virtual int getInventory() const {}
+    virtual int getInventory() const {return 0;}
     virtual string getType() const {return "Agent";}
     virtual void course(double angle); //set moving course at specified speed
     virtual void position(Point dest); //set destination as point (x,y) at specified speed
-    virtual void destination(const string& site){} //set destination site - Knight only
-    virtual void start_working(const string& farm, const string& castle){}//Only for peasant
-    virtual bool attack(const string& peasant){} // only for THUG
-    virtual void setTarget(const string &target) {} // only for THUG
-    virtual bool nearby_knights() {} //returns true if a knight is in 2.5 k"m radius from thug
+    virtual void destination(const string& ){} //set destination site - Knight only
+    virtual void start_working(const string& , const string& ){}//Only for peasant
+    virtual bool attack(const string& ){return false;} // only for THUG
+    virtual void setTarget(const string &) {} // only for THUG
+    virtual bool nearby_knights() {return false;} //returns true if a knight is in 2.5 k"m radius from thug
     virtual void resetInventory(){} // Only for PEASANT
     virtual void reduceHP() {--_health;}
     virtual Point &getLocation();

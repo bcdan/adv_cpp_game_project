@@ -6,18 +6,23 @@
 
 Model Model::_IModel;
 
-void Model::add_agent() {
-
-
-}
 
 string Model::get_objName_by_point(Point p) {
     for (auto &obj : _sim_object_list) {
         if (obj->get_location() == p)
             return obj->getName();
     }
+    string pos = "("+to_string(int(p._x))+", "+to_string(int(p._y))+")";
+    return pos;
+}
 
-    return "null";
+string Model::get_structName_by_point(Point p) {
+    for (auto &obj : _structure_list) {
+        if (obj->get_location() == p)
+            return obj->getName();
+    }
+    string pos = "("+to_string(int(p._x))+", "+to_string(int(p._y))+")";
+    return pos;
 }
 
 Point Model::get_point_by_name(const string& name) {

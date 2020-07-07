@@ -61,8 +61,7 @@ void Thug::update() {
             }
         }
         if (!foundPeasant) {
-            //todo: throw exception - > peasant not found
-            cout << "Target peasant was not found" << endl;
+            cerr << "Target peasant was not found" << endl;
             setState(stopped);
             return;
         }

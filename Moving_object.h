@@ -13,7 +13,6 @@ private:
     int _speed;
 public:
     Moving_object(Point &location, int speed): _location(location),_speed(speed){}
-//    ~Moving_object();
 
     virtual Point &getLocation()  {
         return _location;
@@ -40,7 +39,6 @@ public:
     }
 
 
-    void start_moving(); //virtual?
 };
 
 

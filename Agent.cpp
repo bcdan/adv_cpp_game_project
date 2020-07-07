@@ -17,7 +17,7 @@ void Agent::course(double angle) {
         setLocation(Point(getLocation()._x - getSpeed(), getLocation()._y));
         View::Get().update_location(getName(),getLocation());
     } else {
-        cout << "invalid angle" << endl; // todo: exception
+        throw Exceptions::InputException("Invalid angle\n");
     }
 
 }

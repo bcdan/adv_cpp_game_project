@@ -117,8 +117,7 @@ string View::elementInRange(int i, int j) {
 
 void View::set_zoom(double scale) {
     if (scale < 0) {
-        //todo: throw excpt
-        return;
+        throw Exceptions::InputException("Scale number must be positive");
     }
     _scale = scale;
 }
@@ -129,8 +128,7 @@ void View::set_origin(Point origin) {
 
 void View::set_size(int size) {
     if (size < MIN_SIZE || size > MAX_SIZE) {
-        //todo: throw excpt
-        return;
+        throw Exceptions::InputException("Invalid size, use:  6 < Size <= 30 ");
     }
     _size = size;
 }
@@ -139,4 +137,16 @@ void View::set_defaults() {
     _origin = Point(0, 0);
     _scale = DEFAULT_SCALE;
     _size = DEFAULT_SIZE;
+}
+
+int View::get_size() const {
+    return _size;
+}
+
+double View::getScale() const {
+    return _scale;
+}
+
+const Point &View::getOrigin() const {
+    return _origin;
 }

@@ -12,25 +12,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dd02825-96a2-4b66-9e86-e9395ef72e70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Agent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Agent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Castle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Castle.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Farm.h" beforeDir="false" afterPath="$PROJECT_DIR$/Farm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Geometry.h" beforeDir="false" afterPath="$PROJECT_DIR$/Geometry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Knight.h" beforeDir="false" afterPath="$PROJECT_DIR$/Knight.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moving_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Moving_object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Peasant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Peasant.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Peasant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Peasant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sim_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Sim_object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Structure.h" beforeDir="false" afterPath="$PROJECT_DIR$/Structure.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Thug.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thug.h" beforeDir="false" afterPath="$PROJECT_DIR$/Thug.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/View.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/View.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Agent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Agent.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Castle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Castle.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Controller.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Controller.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Farm.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Farm.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Knight.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Knight.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Model.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Model.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Moving_object.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Moving_object.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Peasant.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Peasant.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Sim_object.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Sim_object.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Structure.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Structure.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Thug.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/Thug.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/View.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/View.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw3.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/hw3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hw3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/hw3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hw3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +78,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OS/threads" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Debugger.ObjectiveC" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunManager">
     <configuration name="hw3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="castles.dat farms.dat" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hw3" TARGET_NAME="hw3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hw3" RUN_TARGET_NAME="hw3">
@@ -90,7 +115,7 @@
       <workItem from="1593935998183" duration="27255000" />
       <workItem from="1594020711731" duration="27872000" />
       <workItem from="1594108695376" duration="3831000" />
-      <workItem from="1594112541902" duration="4010000" />
+      <workItem from="1594112541902" duration="13830000" />
     </task>
     <servers />
   </component>
@@ -98,16 +123,17 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="1271" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594112716558">
+    <state x="414" y="1271" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594119797589">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
-    <state x="414" y="1271" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594112716558" />
+    <state x="414" y="1271" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594119797589" />
     <state x="414" y="1271" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593430567543" />
-    <state x="1452" y="191" width="467" height="706" key="#com.intellij.ide.util.MemberChooser" timestamp="1594055124812">
-      <screen x="895" y="0" width="1920" height="1080" />
+    <state x="557" y="1271" width="468" height="700" key="#com.intellij.ide.util.MemberChooser" timestamp="1594120170941">
+      <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state x="721" y="1271" key="#com.intellij.ide.util.MemberChooser/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594030169949" />
     <state x="1452" y="191" width="467" height="706" key="#com.intellij.ide.util.MemberChooser/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594055124812" />
+    <state x="557" y="1271" width="468" height="700" key="#com.intellij.ide.util.MemberChooser/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594120170941" />
     <state x="721" y="1271" width="468" height="700" key="#com.intellij.ide.util.MemberChooser/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593967533247" />
     <state x="721" y="1271" width="467" height="712" key="#com.intellij.ide.util.MemberChooser/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593538338918" />
     <state x="2578" y="1323" key="#xdebugger.evaluate" timestamp="1593964415901">
@@ -118,73 +144,74 @@
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state x="690" y="1321" width="530" height="601" key="FileChooserDialogImpl/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593541150752" />
-    <state width="1866" height="252" key="GridCell.Tab.0.bottom" timestamp="1594116500720">
+    <state width="1866" height="250" key="GridCell.Tab.0.bottom" timestamp="1594125918621">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="661" key="GridCell.Tab.0.bottom/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594039125061" />
     <state width="1866" height="336" key="GridCell.Tab.0.bottom/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043384" />
-    <state width="1866" height="252" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116500720" />
+    <state width="1866" height="250" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125918621" />
     <state width="1866" height="431" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972873149" />
     <state width="1866" height="336" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="252" key="GridCell.Tab.0.center" timestamp="1594116500720">
+    <state width="1866" height="250" key="GridCell.Tab.0.center" timestamp="1594125918621">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="661" key="GridCell.Tab.0.center/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594039125061" />
     <state width="1866" height="336" key="GridCell.Tab.0.center/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043384" />
-    <state width="1866" height="252" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116500720" />
+    <state width="1866" height="250" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125918621" />
     <state width="1866" height="431" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972873149" />
     <state width="1866" height="336" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="252" key="GridCell.Tab.0.left" timestamp="1594116500720">
+    <state width="1866" height="250" key="GridCell.Tab.0.left" timestamp="1594125918621">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="661" key="GridCell.Tab.0.left/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594039125060" />
     <state width="1866" height="336" key="GridCell.Tab.0.left/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043384" />
-    <state width="1866" height="252" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116500720" />
+    <state width="1866" height="250" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125918621" />
     <state width="1866" height="431" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972873149" />
     <state width="1866" height="336" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="252" key="GridCell.Tab.0.right" timestamp="1594116500720">
+    <state width="1866" height="250" key="GridCell.Tab.0.right" timestamp="1594125918621">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="661" key="GridCell.Tab.0.right/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594039125061" />
     <state width="1866" height="336" key="GridCell.Tab.0.right/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043384" />
-    <state width="1866" height="252" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116500720" />
+    <state width="1866" height="250" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125918621" />
     <state width="1866" height="431" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972873149" />
     <state width="1866" height="336" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="401" key="GridCell.Tab.1.bottom" timestamp="1594116458319">
+    <state width="1866" height="427" key="GridCell.Tab.1.bottom" timestamp="1594125617943">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="440" key="GridCell.Tab.1.bottom/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594038832681" />
     <state width="1866" height="336" key="GridCell.Tab.1.bottom/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043385" />
-    <state width="1866" height="401" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116458319" />
+    <state width="1866" height="427" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125617943" />
     <state width="1866" height="512" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972087560" />
     <state width="1866" height="336" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="401" key="GridCell.Tab.1.center" timestamp="1594116458319">
+    <state width="1866" height="427" key="GridCell.Tab.1.center" timestamp="1594125617943">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="440" key="GridCell.Tab.1.center/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594038832681" />
     <state width="1866" height="336" key="GridCell.Tab.1.center/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043385" />
-    <state width="1866" height="401" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116458319" />
+    <state width="1866" height="427" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125617943" />
     <state width="1866" height="512" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972087560" />
     <state width="1866" height="336" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="401" key="GridCell.Tab.1.left" timestamp="1594116458318">
+    <state width="1866" height="427" key="GridCell.Tab.1.left" timestamp="1594125617943">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="440" key="GridCell.Tab.1.left/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594038832681" />
     <state width="1866" height="336" key="GridCell.Tab.1.left/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043384" />
-    <state width="1866" height="401" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116458318" />
+    <state width="1866" height="427" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125617943" />
     <state width="1866" height="512" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972087560" />
     <state width="1866" height="336" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state width="1866" height="401" key="GridCell.Tab.1.right" timestamp="1594116458319">
+    <state width="1866" height="427" key="GridCell.Tab.1.right" timestamp="1594125617943">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state width="1866" height="440" key="GridCell.Tab.1.right/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594038832681" />
     <state width="1866" height="336" key="GridCell.Tab.1.right/1776.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@895.0.1920.1080" timestamp="1594071043385" />
-    <state width="1866" height="401" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594116458319" />
+    <state width="1866" height="427" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594125617943" />
     <state width="1866" height="512" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593972087560" />
     <state width="1866" height="336" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593539148646" />
-    <state x="324" y="1167" width="1271" height="908" key="SettingsEditor" timestamp="1593964462539">
+    <state x="324" y="1167" width="1271" height="908" key="SettingsEditor" timestamp="1594118162412">
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
+    <state x="324" y="1167" key="SettingsEditor/1920.1080.1920.1080/0.1080.1920.1080/895.0.1920.1080@0.1080.1920.1080" timestamp="1594118162412" />
     <state x="324" y="1167" key="SettingsEditor/1920.1080.1920.1080/0.1080.1920.1080/938.0.1920.1080@0.1080.1920.1080" timestamp="1593964462539" />
     <state x="324" y="1167" width="1271" height="908" key="SettingsEditor/1920.1080.1920.1080/0.1080.1920.1080/960.0.1920.1080@0.1080.1920.1080" timestamp="1593524697293" />
     <state x="2839" y="1052" width="1529" height="1037" maximized="true" key="dock-window-1" timestamp="1594112566765">
